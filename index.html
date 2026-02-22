@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Інтелектуальний вазон з автополивом</title>
 </head>
 <body>
 
     <header class="header">
         <div class="container">
-            <img src="./images/logo.png" alt="LeafyPod Logo" class="header__logo">
+            <div class="header__brand">
+                <img src="./images/logo.png" alt="LeafyPod Logo" class="header__logo">
+                <span style="font-weight:600; font-size:1.1rem;">LeafyPod</span>
+            </div>
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li><a href="#" class="header__link">Про товар</a></li>
+                    <li class="nav-divider">|</li>
                     <li><a href="#" class="header__link">Додаток</a></li>
+                    <li class="nav-divider">|</li>
                     <li><a href="#" class="header__link">Відгуки</a></li>
+                    <li class="nav-divider">|</li>
                     <li><a href="#" class="header__link">Зв'язатися</a></li>
                 </ul>
             </nav>
@@ -29,7 +36,7 @@
                     <p class="hero__description">
                         LeafyPod — це інтелектуальний вазон, який автоматизує догляд за рослинами, створюючи ідеальні умови завдяки системі автополиву та датчикам.
                     </p>
-                    <button class="btn btn--primary">Підтримати проєкт на Kickstarter</button>
+                    <button class="btn btn--primary">Найкраща пропозиція<br>на Kickstarter</button>
                 </div>
                 <div class="hero__image">
                     <img src="./images/pot.png" alt="LeafyPod Smart Pot">
@@ -42,27 +49,44 @@
                 <h2 class="section-title">Вирішує 4 головні причини загибелі рослин</h2>
                 <div class="grid grid--4-cols">
                     <article class="feature-card">
-                        <img src="./images/moisture.png" alt="Зволоження" class="feature-card__icon">
-                        <h3 class="feature-card__title">Зволоження ґрунту</h3>
+                        <div class="feature-card__header">
+                            <div class="feature-card__icon-wrap">
+                                <img src="./images/moisture.png" alt="Зволоження" class="feature-card__icon">
+                            </div>
+                            <h3 class="feature-card__title">Зволоження ґрунту</h3>
+                        </div>
                         <p class="feature-card__text">Полив динамічно регулюється, щоб ваші рослини залишалися настільки вологими або сухими, наскільки вони повинні бути</p>
                     </article>
                     <article class="feature-card">
-                        <img src="./images/light.png" alt="Світло" class="feature-card__icon">
-                        <h3 class="feature-card__title">Світло</h3>
+                        <div class="feature-card__header">
+                            <div class="feature-card__icon-wrap">
+                                <img src="./images/light.png" alt="Світло" class="feature-card__icon">
+                            </div>
+                            <h3 class="feature-card__title">Світло</h3>
+                        </div>
                         <p class="feature-card__text">Отримуйте індивідуальні рекомендації щодо освітлення, навіть якщо ви не спостерігаєте за своєю рослиною так уважно, як ми</p>
                     </article>
                     <article class="feature-card">
-                        <img src="./images/temp.png" alt="Температура" class="feature-card__icon">
-                        <h3 class="feature-card__title">Температура</h3>
+                        <div class="feature-card__header">
+                            <div class="feature-card__icon-wrap">
+                                <img src="./images/temp.png" alt="Температура" class="feature-card__icon">
+                            </div>
+                            <h3 class="feature-card__title">Температура</h3>
+                        </div>
                         <p class="feature-card__text">Вбудовані датчики відстежують температуру 24/7, тож ви будете попереджені про перші зимові нічні протяги, щоб перенести вашу улюблену рослину в тепліше місце!</p>
                     </article>
                     <article class="feature-card">
-                        <img src="./images/humidity.png" alt="Вологість" class="feature-card__icon">
-                        <h3 class="feature-card__title">Вологість повітря</h3>
+                        <div class="feature-card__header">
+                            <div class="feature-card__icon-wrap">
+                                <img src="./images/humidity.png" alt="Вологість" class="feature-card__icon">
+                            </div>
+                            <h3 class="feature-card__title">Вологість повітря</h3>
+                        </div>
                         <p class="feature-card__text">Чи знаєте ви, що 20% різниця вологості між вашою спальнею та ванною може суттєво вплинути на процвітання вашого потосу? Отримуйте сповіщення в додатку!</p>
                     </article>
                 </div>
             </div>
+            <img src="./images/plant_deco.png" alt="" class="problem-solver__deco">
         </section>
 
         <section class="how-it-works">
@@ -125,7 +149,10 @@
                 <div class="app-features__content">
                     <h2 class="section-title">Функції мобільного додатку</h2>
                     <ol class="app-features__list">
-                        <li><strong>Управління через смартфон:</strong> Додаток дозволяє легко контролювати стан рослин і процес поливу прямо з вашого телефону.</li>
+                        <li>
+                        <strong>Управління через смартфон</strong>
+                        Додаток дозволяє легко контролювати стан рослин і процес поливу прямо з вашого телефону.
+                        </li>
                         <li><strong>Розумні сповіщення:</strong> Нагадування, коли рослині треба догляд.</li>
                         <li><strong>Щотижнева статистика:</strong> Прості й зрозумілі звіти про стан рослин для покращення вашого догляду.</li>
                         <li><strong>Режими поливу:</strong> Режими поліву графік графіка на основі потреб рослини: полив створюється за низької вологості обгрунтовано, а AI оптимізує процес.</li>
@@ -143,12 +170,25 @@
                 <div class="package__grid">
                     <div class="package__main-item">
                         <img src="./images/leafypod.png" alt="LeafyPod">
+                        <span class="package__main-label">LeafyPod</span>
                     </div>
                     <div class="package__sub-items">
-                        <div class="package__sub-item"><img src="./images/adapter.png" alt="Адаптер живлення"></div>
-                        <div class="package__sub-item"><img src="./images/cable.png" alt="Зарядний кабель"></div>
-                        <div class="package__sub-item"><img src="./images/filter.png" alt="LeafyPod фільтр"></div>
-                        <div class="package__sub-item"><img src="./images/instruction.png" alt="Інструкція"></div>
+                        <div class="package__sub-item">
+                            <img src="./images/adapter.png" alt="Адаптер живлення">
+                            <span>Адаптер живлення</span>
+                        </div>
+                        <div class="package__sub-item">
+                            <img src="./images/cable.png" alt="Зарядний кабель">
+                            <span>Зарядний кабель</span>
+                        </div>
+                        <div class="package__sub-item">
+                            <img src="./images/filter.png" alt="LeafyPod фільтр">
+                            <span>LeafyPod фільтр</span>
+                        </div>
+                        <div class="package__sub-item">
+                            <img src="./images/instruction.png" alt="Інструкція">
+                            <span>Інструкція</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,22 +224,37 @@
         </section>
     </main>
 
+
+
+
     <footer class="footer">
         <div class="container">
             <div class="footer__brand">
-                <img src="./images/logo.png" alt="LeafyPod Logo" class="footer__logo">
-                <p>Розумний догляд за вашими рослинами — легко і без турбот</p>
+                <div class="footer__logo-wrap">
+                    <img src="./images/logo.png" alt="LeafyPod Logo" class="footer__logo">
+                    <span class="footer__logo-name">LeafyPod</span>
+                </div>
+                <p>Розумний догляд за вашими рослинами — легко і без турбот!</p>
+
+                <p class="footer__follow-label">Слідкуйте за нами</p>
+                <div class="footer__socials">
+                    <a href="#"><img src="./images/fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="./images/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="./images/insta.png" alt="Instagram"></a>
+                </div>
             </div>
+
             <div class="footer__links">
+                <a href="#">Умови використання</a>
                 <a href="#">Політика конфіденційності</a>
-                <a href="#">Правила та умови</a>
-                <a href="#">FAQ</a>
+                <p class="footer__email">info@leafypod.one</p>
             </div>
-            <div class="footer__socials">
-                <a href="#"><img src="./images/fb.png" alt="Facebook"></a>
-                <a href="#"><img src="./images/youtube.png" alt="Instagram"></a>
-                <a href="#"><img src="./images/insta.png" alt="Twitter"></a>
+
+
+            <div class="footer__deco">
+                <img src="./images/plant.png" alt="">
             </div>
+
             <p class="footer__copy">&copy; 2026 LeafyPod. Усі права захищені.</p>
         </div>
     </footer>
